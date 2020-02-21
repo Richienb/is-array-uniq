@@ -1,7 +1,10 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-	if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+const arrayUniq = require("array-uniq")
+const deepEqual = require("deep-equal")
+const { default: ow } = require("ow")
 
-	return `${input} & ${postfix}`
+module.exports = (array) => {
+	ow(array, ow.iterable)
+	return deepEqual(array, arrayUniq(array))
 }

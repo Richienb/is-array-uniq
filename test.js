@@ -1,13 +1,7 @@
 const test = require("ava")
-const theModule = require(".")
+const isArrayUniq = require(".")
 
 test("main", (t) => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number",
-	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+	t.true(isArrayUniq([1, 2]))
+	t.false(isArrayUniq([1, 1]))
 })

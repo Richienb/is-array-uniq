@@ -1,41 +1,33 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Is Array Uniq [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/is-array-uniq/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/is-array-uniq)
 
-My awesome module.
+Check if all the items in an array are unique.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/is-array-uniq.png)](https://npmjs.com/package/is-array-uniq)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install is-array-uniq
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const isArrayUniq = require("is-array-uniq");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+isArrayUniq([1, 2]);
+//=> true
+
+isArrayUniq([1, 1]);
+//=> false
 ```
 
 ## API
 
-### theModule(input, options?)
+### isArrayUniq(array)
 
-#### input
+#### array
 
-Type: `string`
+Type: `arrayLike`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The array to check.
