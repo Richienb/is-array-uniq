@@ -1,4 +1,4 @@
-# Is Array Uniq [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/is-array-uniq/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/is-array-uniq)
+# is-array-uniq [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/is-array-uniq/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/is-array-uniq)
 
 Check if all the items in an array are unique.
 
@@ -28,6 +28,6 @@ isArrayUniq([1, 1]);
 
 #### array
 
-Type: `arrayLike`
+Type: `array`
 
 The array to check.

@@ -12,6 +12,6 @@
  * //=> false
  * ```
 */
-declare function isArrayUniq(array: ArrayLike<any>): boolean
+declare function isArrayUniq(array: any[]): boolean
 
 export = isArrayUniq

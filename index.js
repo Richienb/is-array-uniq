@@ -1,10 +1,12 @@
 "use strict"
 
 const arrayUniq = require("array-uniq")
-const deepEqual = require("deep-equal")
-const { default: ow } = require("ow")
+const isObjectEqual = require("fast-deep-equal/es6")
 
-module.exports = (array) => {
-	ow(array, ow.iterable)
-	return deepEqual(array, arrayUniq(array))
+module.exports = array => {
+	if (!Array.isArray(array)) {
+		throw new TypeError(`Expected an array, got ${typeof array}`)
+	}
+
+	return isObjectEqual(array, arrayUniq(array))
 }
