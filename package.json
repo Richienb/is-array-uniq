@@ -1,6 +1,6 @@
 {
 	"name": "is-array-uniq",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Check if all the items in an array are unique.",
 	"repository": "https://github.com/Richienb/is-array-uniq.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
